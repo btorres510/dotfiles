@@ -27,3 +27,4 @@ map('n', '<leader>cv', '<cmd>! cmake --build build -j4<cr>')
 
 -- Rust key mappings
 map('n', '<leader>rt', '<cmd>! cargo build<cr>')
+map('n', '<leader>rr', '<cmd>! cargo run<cr>')
