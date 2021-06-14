@@ -28,3 +28,10 @@ map('n', '<leader>cv', '<cmd>! cmake --build build -j4<cr>')
 -- Rust key mappings
 map('n', '<leader>rt', '<cmd>! cargo build<cr>')
 map('n', '<leader>rr', '<cmd>! cargo run<cr>')
+
+-- Debugging key mappings
+map('n', '<F6>', '<cmd>lua require\'dap\'.toggle_breakpoint()<cr>')
+map('n', '<F5>', '<cmd>lua require\'dap\'.continue()<cr>')
+map('n', '<F2>', '<cmd>lua require\'dap\'.step_over()<cr>')
+map('n', '<F3>', '<cmd>lua require\'dap\'.step_into()<cr>')
+map('n', '<F4>', '<cmd>lua require\'dap\'.repl.open()<cr>')
